@@ -13,12 +13,8 @@ fish_add_path $HOME/.cargo/bin
 cargo install --locked difftastic
 cargo install --locked bacon
 
-# Install powerline fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -Rf fonts/
+# Install fonts required
+# https://github.com/IlanCosman/tide?tab=readme-ov-file#meslo-nerd-font
 
 # Start prompt configuration
 tide configure
