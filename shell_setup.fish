@@ -26,3 +26,7 @@ set -Ux nvm_default_version lts
 # Ensure for OS X that the shell is now in the list of allowed shells. This value needs
 # to be set in the UI via the Users & Groups setting (right click->Advanced options on a user)
 sudo which fish | sudo tee -a /etc/shells
+
+# Setup brew
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+set -g fish_complete_path $fish_complete_path /opt/homebrew/share/fish/vendor_completions.d
