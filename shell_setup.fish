@@ -23,3 +23,6 @@ tide configure
 nvm install lts
 set -Ux nvm_default_version lts
 
+# Ensure for OS X that the shell is now in the list of allowed shells. This value needs
+# to be set in the UI via the Users & Groups setting (right click->Advanced options on a user)
+sudo which fish | sudo tee -a /etc/shells
