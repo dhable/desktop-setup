@@ -8,9 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     
 brew install autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq lazydocker \
 	neovim kubectl terraform perf typescript go
-brew install --cask iterm2 
-brew install --cask joplin
-brew install --cask cursor
+brew install --cask iterm2 joplin cursor docker 
 
 # Setup iterm2 defaults
 defaults write com.googlecode.iterm2 QuitWhenAllWindowsClosed -int 0
