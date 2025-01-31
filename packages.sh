@@ -7,7 +7,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/dhable/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
     
 brew install autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq lazydocker \
-	neovim kubectl terraform perf typescript go
+	neovim kubectl terraform perf typescript go helm
 brew install --cask iterm2 joplin cursor docker 
 
 # Setup iterm2 defaults
