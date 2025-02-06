@@ -10,7 +10,6 @@ fish_add_path fisher install edc/bass
 # Install Rust and CLI tools
 sh -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs)" "" -y
 fish_add_path $HOME/.cargo/bin
-cargo install --locked difftastic
 cargo install --locked bacon
 
 # Install fonts required
