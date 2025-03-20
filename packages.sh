@@ -7,5 +7,5 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/dhable/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
     
 brew install autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq lazydocker \
-	neovim kubectl terraform perf typescript go helm
+	neovim kubectl terraform perf typescript go helm k9s awscli
 brew install --cask warp joplin cursor docker 
