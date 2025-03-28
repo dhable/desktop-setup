@@ -1,5 +1,11 @@
 #!/usr/bin/env fish
 
+# Check if git is available
+if not command -sq git
+    echo "Error: git is not installed or not in PATH"
+    exit 1
+end
+
 git config --global user.name "Dan Hable"
 git config --global user.email "dan@danhable.com"
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
