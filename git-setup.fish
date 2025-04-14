@@ -13,3 +13,5 @@ git config --global interactive.diffFilter "diff-so-fancy --patch"
 git config --bool --global diff-so-fancy.stripLeadingSymbols false
 git config --bool --global diff-so-fancy.markEmptyLines false
 git config --global diff-so-fancy.rulerWidth 120
+
+git config --global alias.cleanup-merged 'bash -c "git fetch --prune && git branch -D $(git branch -vv | grep \": gone]\" | awk '\''{print $1}'\'')"'
