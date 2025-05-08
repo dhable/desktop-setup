@@ -14,4 +14,4 @@ git config --bool --global diff-so-fancy.stripLeadingSymbols false
 git config --bool --global diff-so-fancy.markEmptyLines false
 git config --global diff-so-fancy.rulerWidth 120
 
-git config --global alias.cleanup-merged 'bash -c "git fetch --prune && git branch -D $(git branch -vv | grep \": gone]\" | awk '\''{print $1}'\'')"'
+git config --global alias.gone '!git fetch --prune && git branch -vv | awk \'$0 ~ /: gone]/ {print ($1=="*" ? $2 : $1)}\' | xargs git branch -D'
