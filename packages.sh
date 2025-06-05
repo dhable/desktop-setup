@@ -35,11 +35,11 @@ install_if_missing() {
 
 # Install packages if they're not already installed
 for package in autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq lazydocker \
-    neovim kubectl terraform perf typescript go helm k9s awscli bats-core; do
+    neovim kubectl terraform perf typescript go helm k9s awscli bats-core orbstack; do
     install_if_missing "$package"
 done
 
 # Install casks if they're not already installed
-for cask in warp joplin cursor docker; do
+for cask in warp joplin cursor; do
     install_if_missing "cask" "$cask"
 done
