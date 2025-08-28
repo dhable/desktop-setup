@@ -20,9 +20,10 @@ cargo install --locked bacon
 # Start prompt configuration
 tide configure
 
-# Setup nvm
+# Setup nvm, npm and node
 nvm install lts
 set -Ux nvm_default_version lts
+npm config set ignore-scripts true
 
 # Ensure for OS X that the shell is now in the list of allowed shells. This value needs
 # to be set in the UI via the Users & Groups setting (right click->Advanced options on a user)
