@@ -32,3 +32,8 @@ sudo which fish | sudo tee -a /etc/shells
 # Setup brew
 set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 set -g fish_complete_path $fish_complete_path /opt/homebrew/share/fish/vendor_completions.d
+
+# QoL things
+alias -s gp="git pull"
+alias -s gg="git gone"
+alias -s co="git checkout"
