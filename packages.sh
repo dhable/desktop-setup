@@ -34,8 +34,8 @@ install_if_missing() {
 }
 
 # Install packages if they're not already installed
-for package in autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq lazydocker \
-    neovim kubectl terraform perf typescript go helm k9s awscli bats-core orbstack; do
+for package in autoconf awk bat cmake ctop diff-so-fancy fish fzf gh git htop jq yq neovim \
+    kubectl terraform perf typescript go helm k9s awscli bats-core orbstack opencode act; do
     install_if_missing "$package"
 done
 
